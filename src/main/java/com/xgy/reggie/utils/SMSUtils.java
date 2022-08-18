@@ -18,11 +18,11 @@ public class SMSUtils {
 	 * @param templateCode 模板
 	 * @param phoneNumbers 手机号
 	 * @param param 参数
-	 * id:LTAI5tLcozspqjm1keJ4y595
-	 * secret:ISYsEZPvxZT2m6v3AaNF24DPi9VvYL
+	 * AccessId:
+	 * secret:
 	 */
 	public static void sendMessage(String signName, String templateCode,String phoneNumbers,String param){
-		DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI5t62sdL8XNesRKZXkwyv", "mVWS166KwUx9qpuKa9eYlK5Z0z3s5o");
+		DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
 		IAcsClient client = new DefaultAcsClient(profile);
 
 		SendSmsRequest request = new SendSmsRequest();
